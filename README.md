@@ -10,3 +10,5 @@ Developed using **React + Typescript + Parcel**.
 
 You need to provide the Youtube **API_KEY** which you can obtain from [the Google Developers page](https://developers.google.com/).
 
+![Random KEXP Session Screenshot](./public/assets/screenshot.png)
+
