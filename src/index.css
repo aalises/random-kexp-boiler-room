@@ -1,0 +1,53 @@
+body {
+  font-family: sans-serif;
+  background: url('../public/assets/bg.jpg');
+  background-size: cover;
+}
+
+h2, span {
+  cursor: default;
+}
+
+button {
+  cursor: pointer;
+  opacity: .80;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover{
+  transition: opacity .15s ease-in;
+  opacity: 1;
+}
+
+div {
+  width: 60vw;
+  height: 33.75vw;
+}
+
+span {
+  width: 60vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer{
+  position: absolute; 
+  bottom: 0; 
+  left: 0; 
+  cursor: default
+}
+
+#root,
+body,
+html {
+  width: 100%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
