@@ -10,7 +10,7 @@ interface PlayerProps {
 export default (props: PlayerProps) => {
   const { options, id, onEnd } = props;
   return (
-    <div>
+    <div className="mb4">
       <Youtube onEnd={onEnd} videoId={id} opts={options} />
     </div>
   )
