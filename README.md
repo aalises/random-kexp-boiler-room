@@ -1,6 +1,6 @@
 # Random KEXP Session
 
-https://random-kexp-cqtfxclmgj.now.sh/
+https://random-kexp.now.sh/
 
 This application generates a random KEXP Performance Youtube Video. Discover new music! 🎵 
 Developed using **React + Typescript + Parcel**.
