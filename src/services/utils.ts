@@ -1,4 +1,4 @@
-import { ORDER_VALUES, THRESHOLDS, KEXP_START_DATE, CURRENT_DATE_OFFSET } from "./constants"
+import { ORDER_VALUES, BOILER_ROOM_START_DATE, CURRENT_DATE_OFFSET } from "./constants"
 
 const randomDate = (start: Date, end: Date) => new Date(start.getTime() + Math.random() * (end.getTime() - start.getTime()));
 const randomArrayValue = <T extends {}>(array: T[]): T => array[Math.floor(Math.random() * array.length)];
@@ -18,7 +18,7 @@ const generateRandomFilterParams = (): any => {
   const currentDate = new Date();
 
   //We create two random dates with a year of difference to delimit filter
-  const date = randomDate(KEXP_START_DATE, new Date());
+  const date = randomDate(BOILER_ROOM_START_DATE, new Date());
   const dateOffset = new Date(date);
   dateOffset.setMonth(currentDate.getMonth() + CURRENT_DATE_OFFSET);
 
@@ -30,11 +30,7 @@ const generateRandomFilterParams = (): any => {
 }
 
 const extractRandomIndex = (data: ResponseItem[]): string => {
-  //Filters the data to be only Full Performances if possible
-  let filteredData = filterData([...data], "Full");
-  if (filteredData.length < THRESHOLDS.minFullPerformances) {
-    filteredData = filterData([...data], "Live");
-  }
+  let filteredData = filterData([...data], "Boiler");
   const ids = filteredData.map(el => el.id.videoId);
   return randomArrayValue(ids);
 }

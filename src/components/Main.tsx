@@ -1,6 +1,6 @@
 import * as React from 'react';
 import VideoPlayer from './VideoPlayer';
-import getRandomKEXPVideo from '../services/services';
+import getRandomBoilerRoomVideo from '../services/services';
 import { DEFAULT_ID } from '../services/constants';
 import { withErrorCatch } from '../services/utils';
 import Footer from "./Footer";
@@ -33,7 +33,7 @@ export default class Main extends React.Component<any, mainState> {
   }
 
   async getVideo(): Promise<void> {
-    const [err, id] = await withErrorCatch(getRandomKEXPVideo());
+    const [err, id] = await withErrorCatch(getRandomBoilerRoomVideo());
     this.setState({ videoID: (id && !err) ? id : DEFAULT_ID });
   }
 
