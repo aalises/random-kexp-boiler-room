@@ -26,7 +26,7 @@ const generateRandomFilterParams = (): any => {
     publishedBefore: dateOffset.toISOString(),
     publishedAfter: date.toISOString(),
     order: orderBy,
-    videoDuration: "long"
+    //videoDuration: "long"
   }
 }
 
