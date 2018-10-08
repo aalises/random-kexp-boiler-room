@@ -5,7 +5,8 @@ interface SearchParams {
   key: string,
   order?: string,
   publishedAfter?: string,
-  publishedBefore?: string
+  publishedBefore?: string,
+  videoDuration?: string
 }
 
 interface Options {
