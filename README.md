@@ -1,7 +1,7 @@
 # Random KEXP / Boiler Room Session
 
-https://random-kexp.now.sh/ - Random KEXP Performance
-https://random-boiler-room.now.sh/ - Random Boiler Room Session
+- https://random-kexp.now.sh/ : Random KEXP Performance
+- https://random-boiler-room.now.sh/ : Random Boiler Room Session
 
 
 This application generates a random KEXP Performance / Boiler Room Session Youtube Video. Discover new music! 🎵 
